@@ -1,0 +1,100 @@
+.footer-main {
+  background: #171719;
+  .footer-upper {
+    padding: 100px 120px;
+    .footer-logo-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .company-info {
+      .info {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+    }
+    .contact-info {
+      .info {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+    }
+    .footer-menu-sections {
+      padding: 60px 0px 40px 40px;
+      .each-menu-section {
+        .title {
+          color: #fff;
+          font-family: "Fahkwang";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px; /* 233.333% */
+        }
+        .each-menu-options {
+          list-style: none;
+          padding-left: 0;
+          .each-menu-option {
+            a {
+              color: #fff;
+              font-family: "Poppins";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28px; /* 233.333% */
+              text-decoration: none;
+            }
+          }
+          .each-menu-option:hover {
+            a {
+              color: #d18b28;
+            }
+          }
+        }
+      }
+    }
+  }
+  hr {
+    border-top: #fff solid;
+    margin: 0;
+  }
+  .footer-bottom {
+    padding: 24px 120px;
+    .copyright {
+      p {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+      }
+    }
+    .developer-info {
+      .powered_by {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+      }
+      .tagline {
+        color: #fff;
+        font-family: Helvetica;
+        font-size: 5.625px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.113px;
+      }
+    }
+  }
+}
