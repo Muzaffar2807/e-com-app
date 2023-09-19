@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import "./Layout.scss";
+import "./AuthLayouts.scss"
 import Footer from "./Footer";
 
 export default function AuthLayout(props) {

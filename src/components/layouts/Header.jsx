@@ -27,22 +27,22 @@ export default function Header() {
       <div className="upper-header d-flex justify-content-between">
         <div className="logo">
           <RouterLink to="home">
-            <img  alt="Logo" />
+            <img alt="Logo" />
           </RouterLink>
         </div>
         <div className="upper-menu-options">
           <ul className="options d-flex align-items-center">
             <li className="each-option search">
-              <img   alt="Search" />
+              <img alt="Search" />
             </li>
             <li className="each-option">
-              <RouterLink to="/wishlist">
-                <img   alt="Heart" />
+              <RouterLink to="/whishlist">
+                <img alt="Heart" />
               </RouterLink>
             </li>
             <li className="each-option">
               <RouterLink to="/cart">
-                <img  alt="cart" />
+                <img alt="cart" />
               </RouterLink>
             </li>
             <li
@@ -57,7 +57,7 @@ export default function Header() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <img   alt="user" />
+                <img alt="user" />
               </RouterLink>
               <div
                 className={`dropdown-menu user-menu  ${
@@ -71,7 +71,7 @@ export default function Header() {
                       to="/settings"
                       onClick={() => setuserDropdown(false)}
                     >
-                      <img   alt="user" />
+                      <img alt="user" />
                       <span>My Account</span>
                     </RouterLink>
                   </li>
@@ -80,13 +80,13 @@ export default function Header() {
                       to="/orders"
                       onClick={() => setuserDropdown(false)}
                     >
-                      <img   alt="user" /> <span>Orders</span>
+                      <img alt="user" /> <span>Orders</span>
                     </RouterLink>
                   </li>
 
                   <li className="each-user-option" onClick={() => onLogout()}>
                     <RouterLink>
-                      <img   alt="user" /> <span>Logout</span>
+                      <img alt="user" /> <span>Logout</span>
                     </RouterLink>
                   </li>
                 </ul>
@@ -286,10 +286,7 @@ export default function Header() {
                     </div>
                     <div className="col-12 col-lg-6">
                       <div className="d-flex justify-content-center">
-                        <img 
-                          className="option-img"
-                          alt="Perfume"
-                        />
+                        <img className="option-img" alt="Perfume" />
                       </div>
                     </div>
                   </div>
