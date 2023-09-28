@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import "./Header.scss"; 
 import { Router, NavLink as RouterLink } from "react-router-dom";
 
-import * as Storage from "../../store/LocalStorage";
-
+import * as Storage from "../../store/LocalStorage"; 
+import Logo from "../../assets/images/color_logo.png";
+import Search from "../../assets/images/icons/search.svg";
+import User from "../../assets/images/icons/user.svg";
+import Order from "../../assets/images/icons/order.svg";
+import Logout from "../../assets/images/icons/logout.svg";
+import Cart from "../../assets/images/icons/cart.svg";
+import Heart from "../../assets/images/icons/heart.svg";
+import Perfume from "../../assets/images/perfume.png"; 
 export default function Header() {
   const [showMenu, setShowMenu] = useState({});
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -27,22 +34,22 @@ export default function Header() {
       <div className="upper-header d-flex justify-content-between">
         <div className="logo">
           <RouterLink to="home">
-            <img alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </RouterLink>
         </div>
         <div className="upper-menu-options">
           <ul className="options d-flex align-items-center">
             <li className="each-option search">
-              <img alt="Search" />
+              <img src={Search} alt="Search" />
             </li>
             <li className="each-option">
               <RouterLink to="/whishlist">
-                <img alt="Heart" />
+                <img src={Heart} alt="Heart" />
               </RouterLink>
             </li>
             <li className="each-option">
               <RouterLink to="/cart">
-                <img alt="cart" />
+                <img src={Cart} alt="cart" />
               </RouterLink>
             </li>
             <li
@@ -57,7 +64,7 @@ export default function Header() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <img alt="user" />
+                <img src={User} alt="user" />
               </RouterLink>
               <div
                 className={`dropdown-menu user-menu  ${
@@ -71,7 +78,7 @@ export default function Header() {
                       to="/settings"
                       onClick={() => setuserDropdown(false)}
                     >
-                      <img alt="user" />
+                      <img src={User} alt="user" />
                       <span>My Account</span>
                     </RouterLink>
                   </li>
@@ -80,13 +87,14 @@ export default function Header() {
                       to="/orders"
                       onClick={() => setuserDropdown(false)}
                     >
-                      <img alt="user" /> <span>Orders</span>
+                      <img src={Order} alt="user" /> <span>Orders</span>
                     </RouterLink>
                   </li>
 
                   <li className="each-user-option" onClick={() => onLogout()}>
                     <RouterLink>
-                      <img alt="user" /> <span>Logout</span>
+                      <img src={Logout} alt="user" />
+                      <span>Logout</span>
                     </RouterLink>
                   </li>
                 </ul>
