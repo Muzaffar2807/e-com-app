@@ -7,10 +7,14 @@ import axios from "axios";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { ConfigProvider } from "./context/Config";
+import { ToastContainer } from "react-toastify";
+import { Provider } from "react-redux";
+import storeProvider from "./store/StoreProvider";
+import storeFactory from "./store";
 
 function App() {
   const [configFetched, setConfigFetched] = useState(false);
-  const [config, setConifg] = useState();
+  const [config, setConifg] = useState({});
 
   useEffect(() => {
     axios
@@ -24,15 +28,36 @@ function App() {
         console.log(res);
         console.log("An error occurred config in appjs");
       });
-  }, []); 
+  }, []);
+
+  storeProvider.init(storeFactory);
+  const store = storeProvider.getStore();
+  const saveState = () =>
+    localStorage.setItem(config.reduxkey, JSON.stringify(store.getState()));
+  store.subscribe(saveState);
+
   return (
     config &&
     configFetched && (
-      <ConfigProvider>
-        <Router basename={config.basePath}>
-          <Main />
-        </Router>
-      </ConfigProvider>
+      <Provider store={store}>
+        <ConfigProvider>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          <Router basename={config.basePath}>
+            <Main />
+          </Router>
+          <ToastContainer />
+        </ConfigProvider>
+      </Provider>
     )
   );
 }

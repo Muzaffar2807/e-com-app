@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss"; 
 import { Router, NavLink as RouterLink } from "react-router-dom";
 
-import * as Storage from "../../store/LocalStorage"; 
+//import * as Storage from "../../store/LocalStorage"; 
 import Logo from "../../assets/images/icons/logo-png.png";
 import CompName from "../../assets/images/khans.png";
 import Search from "../../assets/images/icons/search.svg";
