@@ -132,7 +132,7 @@ export default function Header() {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Mens's Wear
+                  Men's Wear
                 </RouterLink>
                 <div
                   className={`dropdown-menu mega-menu-content mega-menu-dropdown ${
