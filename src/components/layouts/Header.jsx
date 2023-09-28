@@ -3,7 +3,8 @@ import "./Header.scss";
 import { Router, NavLink as RouterLink } from "react-router-dom";
 
 import * as Storage from "../../store/LocalStorage"; 
-import Logo from "../../assets/images/color_logo.png";
+import Logo from "../../assets/images/icons/logo-png.png";
+import CompName from "../../assets/images/khans.png";
 import Search from "../../assets/images/icons/search.svg";
 import User from "../../assets/images/icons/user.svg";
 import Order from "../../assets/images/icons/order.svg";
@@ -34,7 +35,7 @@ export default function Header() {
       <div className="upper-header d-flex justify-content-between">
         <div className="logo">
           <RouterLink to="home">
-            <img src={Logo} alt="Logo" />
+            <img src={CompName} className="main-logo" alt="Logo" />
           </RouterLink>
         </div>
         <div className="upper-menu-options">
@@ -226,15 +227,10 @@ export default function Header() {
               <li className="nav-item each-bt-menu">
                 <RouterLink className="nav-link">Kid's Wear</RouterLink>
               </li>
-              <li className="nav-item each-bt-menu">
-                <RouterLink className="nav-link">New Arrival</RouterLink>
-              </li>
+             
               <li className="nav-item each-bt-menu">
                 <RouterLink className="nav-link">Best Seller</RouterLink>
-              </li>
-              <li className="nav-item each-bt-menu">
-                <RouterLink className="nav-link">Customizable</RouterLink>
-              </li>
+              </li> 
               <li
                 className={`nav-item each-bt-menu dropdown mega-menu ${
                   showMenu.accessories ? "show" : ""
@@ -268,10 +264,7 @@ export default function Header() {
                         </li>
                         <li className="each-sub-option">
                           <RouterLink>Belts</RouterLink>
-                        </li>
-                        <li className="each-sub-option">
-                          <RouterLink>Perfumes</RouterLink>
-                        </li>
+                        </li> 
                         <li className="each-sub-option">
                           <RouterLink>Hand Clips</RouterLink>
                         </li>
@@ -294,7 +287,7 @@ export default function Header() {
                     </div>
                     <div className="col-12 col-lg-6">
                       <div className="d-flex justify-content-center">
-                        <img className="option-img" alt="Perfume" />
+                        <img className="option-img" alt="Perfume" src={Perfume} />
                       </div>
                     </div>
                   </div>

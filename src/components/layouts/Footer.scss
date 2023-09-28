@@ -1,11 +1,17 @@
 .footer-main {
   background: #171719;
+  width: 100% !important;
+  padding: 0;
   .footer-upper {
-    padding: 100px 120px;
+   padding: 100px 120px;
+   width: 100%;
     .footer-logo-section {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+    .footer-logo{
+      height: 18rem;
     }
     .company-info {
       .info {
