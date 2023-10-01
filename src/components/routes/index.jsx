@@ -15,6 +15,7 @@ export default function CustomRoutes() {
   const config = useSelector((state) => state.config);
   const { email } = useSelector((state) => state.user); 
   const {  basePath } = useConfig();
+  const [token, setToken] = useState(true);
 
   useEffect(() => {
     checkSession();
@@ -32,10 +33,11 @@ export default function CustomRoutes() {
     }
   };
 
-  return !email ? (
+  return !token ? (
     <Routes>
       <Route path="/" element={<Login />} />
-     {/*  <Route path="/signup" element={<Signup />} /> */}
+      <Route path="/login" element={<Login />} />
+      {/*  <Route path="/signup" element={<Signup />} /> */}
     </Routes>
   ) : (
     <AuthLayout>
