@@ -112,7 +112,7 @@ export default function LoginMain() {
               {moto && <p>"{moto}"</p>}
             </div>
             <div className="blue-bg-bottom-img-main mt-5">
-              <img  alt="Not Found" />
+              <img alt="Not Found" />
             </div>
           </div>
         </div>
@@ -203,6 +203,15 @@ export default function LoginMain() {
                           LOGIN
                         </button>
                       )}
+                      <div className="signup-container">
+                        <h4>
+                          Don't have a Account?{" "}
+                          <span style={{ color: "#4caeda", cursor: "pointer" }} onClick={() => navigate('/signup')}>
+                       
+                            Signup Here!
+                          </span> 
+                        </h4>
+                      </div>
                     </div>
                   </form>
                 )}

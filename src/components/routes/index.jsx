@@ -9,13 +9,14 @@ import Wishlist from "../containers/wishlist";
 import Cart from "../containers/cart";
 import { updateUserProfile } from "../../store/slices/user";
 import Login from "../containers/login";
+import Signup from "../containers/signup/Signup";
 
 export default function CustomRoutes() {
   const dispatch = useDispatch();
   const config = useSelector((state) => state.config);
   const { email } = useSelector((state) => state.user); 
   const {  basePath } = useConfig();
-  const [token, setToken] = useState(true);
+  const [token, setToken] = useState(false);
 
   useEffect(() => {
     checkSession();
@@ -37,7 +38,7 @@ export default function CustomRoutes() {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
-      {/*  <Route path="/signup" element={<Signup />} /> */}
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   ) : (
     <AuthLayout>
