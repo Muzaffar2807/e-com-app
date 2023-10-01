@@ -1,0 +1,192 @@
+ .signup-main {
+  font-family: "Montserrat";
+  overflow: hidden;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+
+  .signup-main-bg-blue {
+    background: #272730;
+   // padding: 50px 70px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-left: 5rem;
+    .himsidebar-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+
+      .himsidebar-logo-main{
+        img{
+        width: 85%;
+        height: 85%;
+
+        }
+      } 
+    }
+
+     
+  }
+
+  .signup-form-main-form {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    .signup-form {
+      width: 100%;
+    }
+
+    .brand-logo {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 2.125rem;
+      font-variant: all-small-caps;
+    }
+
+    .nk-block-des {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 160%;
+      text-transform: lowercase;
+    }
+
+    .form-control-wrap {
+      display: flex;
+      border: 1px solid rgb(240, 232, 232);
+      border-radius: 8px;
+      padding-inline: 0.5em;
+        margin-bottom: .5rem;
+        
+
+      img {
+        opacity: 0.3;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding-inline: 0.5em;
+        padding: 1rem;
+        
+
+        &:focus {
+          outline: 0px !important;
+          box-shadow: none;
+        }
+
+        &::placeholder {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .forgot {
+      a {
+        font-family: "Montserrat";
+        font-weight: 600;
+        color: #3963ad;
+      }
+
+      font-size: 1rem;
+      text-align: end;
+    }
+
+    button {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
+
+  .brand-logo h4 {
+    font-weight: 700;
+    font-size: 48px;
+    color: black !important;
+  }
+
+  .nk-block-des p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    padding-left: 9px;
+  }
+
+  .form-control-wrap {
+    ::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(26, 68, 76, 0.5) !important;
+    }
+
+    .form-control-lg {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+    }
+  }
+
+  .form-control-lg:active,
+  .form-control-lg:hover,
+  .form-control-lg:focus {
+    border: 1px solid #0464b8;
+  }
+
+  .form-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .btn-primary {
+    background-color: #085f63 !important;
+    border-color: #085f63 !important;
+    width: 100%;
+  }
+
+  .link-sm-div {
+    text-align: right;
+  }
+
+  .link-sm,
+  .service-privacy-link,
+  .service-privacy-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #0464b8;
+  }
+
+  .service-privacy-link {
+    text-decoration: underline;
+  }
+
+  .service-privacy-text {
+    color: #000;
+  }
+
+   
+
+  .signup-container{
+    padding-top: .5rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .signup-main .signup-main-bg-blue .blue-bg-bottom-img-main {
+    height: auto;
+  }
+
+  .signup-main .signup-main-bg-blue .blue-bg-bottom-img-main img {
+    height: auto;
+  }
+
+  .signup-main .signup-form-main-form {
+    padding: 50px;
+  }
+}
