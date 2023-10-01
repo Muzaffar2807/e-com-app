@@ -83,38 +83,17 @@ export default function LoginMain() {
   };
   return (
     <div className="login-main">
-      <div class="row">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-6 p-0">
+      <div class="row container-login">
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 p-0  ">
           <div className="login-main-bg-blue">
-            <div className="nk-sidebar-brand himsidebar-logo">
+            <div className=" himsidebar-logo">
               <div className="himsidebar-logo-main">
                 <img src={Logo} alt="logo" />
               </div>
-              <div className="himsidebar-content-main">
-                <b>
-                  <p className="m-0 portal-content">{portal}</p>
-                </b>
-                {tagline && <p className="m-0 tagline-content">{tagline}</p>}
-              </div>
-            </div>
-            <div
-              style={{
-                color: "#fff",
-                fontSize: 40,
-                fontWeight: 700,
-                fontFamily: "Montserrat",
-                fontStyle: "normal",
-                marginTop: "30px",
-                marginBottom: "30px",
-                textTransform: "uppercase",
-              }}
-            >
-              {moto && <p>"{moto}"</p>}
-            </div>
-            <div className="blue-bg-bottom-img-main mt-5">
-              <img alt="Not Found" />
-            </div>
+             
+            </div> 
           </div>
+          
         </div>
 
         <div class="bg-white col-12 col-sm-12 col-md-6 col-lg-6 p-0">
@@ -145,7 +124,7 @@ export default function LoginMain() {
                   handleSubmit,
                 }) => (
                   <form>
-                    <div style={{ padding: "40px 0px" }}>
+                    <div style={{ padding: "40px 0px", paddingBottom: "5px" }}>
                       <div class="form-group">
                         <div class="form-control-wrap">
                           <img src={usericon} alt="" />
@@ -153,7 +132,7 @@ export default function LoginMain() {
                             type="email"
                             class="form-control form-control-lg"
                             id="default-01"
-                            placeholder="user login id"
+                            placeholder="email"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             value={values.email}
@@ -204,13 +183,15 @@ export default function LoginMain() {
                         </button>
                       )}
                       <div className="signup-container">
-                        <h4>
+                        <h6>
                           Don't have a Account?{" "}
-                          <span style={{ color: "#4caeda", cursor: "pointer" }} onClick={() => navigate('/signup')}>
-                       
-                            Signup Here!
-                          </span> 
-                        </h4>
+                          <span
+                            style={{ color: "#4caeda", cursor: "pointer" }}
+                            onClick={() => navigate("/signup")}
+                          >
+                            Signup!
+                          </span>
+                        </h6>
                       </div>
                     </div>
                   </form>
