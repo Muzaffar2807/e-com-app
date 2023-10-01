@@ -1,5 +1,8 @@
 .header-main {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 555;
   .upper-header {
     height: auto; 
     background: #fff;

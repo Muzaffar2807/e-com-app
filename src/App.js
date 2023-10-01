@@ -52,9 +52,12 @@ function App() {
             draggable
             pauseOnHover
           />
-          <Router basename={config.basePath}>
-            <Main />
-          </Router>
+          <div className="main_app">
+            <Router basename={config.basePath}>
+              <Main />
+            </Router>
+          </div>
+
           <ToastContainer />
         </ConfigProvider>
       </Provider>

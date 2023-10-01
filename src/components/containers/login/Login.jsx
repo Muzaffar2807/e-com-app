@@ -189,10 +189,17 @@ export default function LoginMain() {
                             style={{ color: "#4caeda", cursor: "pointer" }}
                             onClick={() => navigate("/signup")}
                           >
-                            Signup!
+                            Register
                           </span>
                         </h6>
                       </div>
+
+                      <h4 style={{ textAlign: 'center'}}>
+                        Or
+                      </h4>
+
+                      {/* Add Google sign in here*/}
+                      
                     </div>
                   </form>
                 )}

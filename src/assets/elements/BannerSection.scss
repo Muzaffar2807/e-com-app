@@ -1,0 +1,79 @@
+.home-swiper {
+  overflow-y: initial !important;
+  .hero-main {
+    .row > * {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    text-decoration: none;
+
+    .hero-section {
+      .hero-img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .hero-content {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #171719;
+        h4 {
+          color: #fff;
+          font-family: "Fahkwang";
+
+          font-style: normal;
+          font-weight: 600;
+          line-height: 160%; /* 76.8px */
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        .shop-now {
+          margin-top: 0.5rem;
+          display: flex;
+          padding: 12px 24px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: #4caeda;
+          border: none;
+          border-radius: 12px;
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 160%;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  } 
+
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: #4caeda;  
+    color: #fff;  
+    border-radius: 50%; 
+    width: 40px;  
+    height: 40px; 
+    font-size: 20px;  
+    line-height: 40px;  
+  }
+ 
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #0056b3;  
+    cursor: pointer;  
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -25px;
+  }
+  .swiper-pagination-bullet-active {
+    background: #171719;
+  }
+}
