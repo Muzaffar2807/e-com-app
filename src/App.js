@@ -56,8 +56,7 @@ function App() {
             <Router basename={config.basePath}>
               <Main />
             </Router>
-          </div>
-
+          </div> 
           <ToastContainer />
         </ConfigProvider>
       </Provider>
