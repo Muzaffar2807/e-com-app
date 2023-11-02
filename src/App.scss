@@ -6,5 +6,10 @@
 }
 
 .main_app {
-  padding-top: 173px;
+ padding-top: 173px;
+
+  // Override the padding-top value for unauthenticated users
+  &.unauthenticated {
+    padding-top: 0;
+  }
 }

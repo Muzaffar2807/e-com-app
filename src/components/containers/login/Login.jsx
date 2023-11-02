@@ -96,10 +96,10 @@ export default function LoginMain() {
           
         </div>
 
-        <div class="bg-white col-12 col-sm-12 col-md-6 col-lg-6 p-0">
+        <div className="bg-white col-12 col-sm-12 col-md-6 col-lg-6 p-0">
           <div className="login-form-main-form">
             <div className="login-form">
-              <div class="brand-logo">
+              <div className="brand-logo">
                 <h4>WELCOME BACK....</h4>
               </div>
 
@@ -125,12 +125,12 @@ export default function LoginMain() {
                 }) => (
                   <form>
                     <div style={{ padding: "40px 0px", paddingBottom: "5px" }}>
-                      <div class="form-group">
-                        <div class="form-control-wrap">
+                      <div className="form-group">
+                        <div className="form-control-wrap">
                           <img src={usericon} alt="" />
                           <input
                             type="email"
-                            class="form-control form-control-lg"
+                            className="form-control form-control-lg"
                             id="default-01"
                             placeholder="email"
                             onChange={handleChange}
@@ -142,12 +142,12 @@ export default function LoginMain() {
                         {validate.displayError(touched, errors, "email")}
                       </div>
 
-                      <div class="form-group">
-                        <div class="form-control-wrap">
+                      <div className="form-group">
+                        <div className="form-control-wrap">
                           <img src={lockicon} alt="" />
                           <input
                             type={passwordHidden ? "password" : "text"}
-                            class="form-control form-control-lg"
+                            className="form-control form-control-lg"
                             id="password"
                             placeholder="password"
                             onChange={handleChange}
@@ -166,14 +166,14 @@ export default function LoginMain() {
                       </div>
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                       {loginLoading ? (
                         <div style={{ margin: "0 auto", textAlign: "center" }}>
                           <ScaleLoader color="#0F93C3 " />
                         </div>
                       ) : (
                         <button
-                          class="btn btn-lg btn-primary btn-block"
+                          className="btn btn-lg btn-primary btn-block"
                           onClick={(e) => {
                             e.preventDefault();
                             handleSubmit();

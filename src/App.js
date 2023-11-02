@@ -4,7 +4,6 @@ import "./App.scss";
 import Main from "./Main";
 
 import axios from "axios";
-
 import { BrowserRouter as Router } from "react-router-dom";
 import { ConfigProvider } from "./context/Config";
 import { ToastContainer } from "react-toastify";
@@ -51,12 +50,10 @@ function App() {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-          />
-          <div className="main_app">
+          /> 
             <Router basename={config.basePath}>
               <Main />
-            </Router>
-          </div> 
+            </Router> 
           <ToastContainer />
         </ConfigProvider>
       </Provider>
